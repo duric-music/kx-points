@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(45, 45, 45);
+
+}
+
+/*全てのセクションを中央に定義*/
+section{
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    color: black;
+}
+
+@media (width > 375px){
+    section{
+        width: 1000px;
+        margin: 80px auto;
+        
+    }
+}
+
+.titleMain{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(222, 222, 222);
+}
+
+.title{
+    color: rgb(222, 222, 222);
+}
+
+table{
+    background-color: rgb(243, 243, 243);
+}
+
+td{
+    border: solid black;
+    width: 100px;
+    height: 50px;
+    font-size: 8pt;
+}
+
+@media (min-width:768px){
+    td{
+        border: solid black;
+        width: 400px;
+        font-size: 14pt;
+    }
+}
+
+.subject, .already, .future, .subjectMain, .subjectSub{
+    text-align: center;
+}
+
+td input{
+    justify-content: center;
+    width: 200px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border: 2px solid #999999;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.confirm{
+    text-align: center;
+}
+
+.taniMessage, .taniMessage2, .taniSougouMessage{
+    opacity: 0;
+}
+.taniButton, .taniButton2{
+    background-color: skyblue;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 20pt;
+}
+
+.taniButton:hover, .taniButton2:hover{
+    transform: scale(1.02);
+}
+
+.taniSenmonBackground, .taniSougouBackground{
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    padding: 50px 0;
+}
+
+
+.taniSenmon, .taniSenmonFuture, .taniSenmon2, .taniSenmonFuture2, .taniSougouMessage{
+    font-size: 20pt;
+}
+
+footer{
+    color: rgb(222, 222, 222);
+    text-align: center;
+    padding: 40px 0;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav li{
+    margin: 0 20px;
+}
+
+nav li a{
+    color: rgb(222, 222, 222);
+    text-decoration: none;
+}

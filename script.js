@@ -20,7 +20,6 @@ function notEnough() {
     }
 }
 
-
 function notYetStyle(notYet){
     notYet.style.color = 'red';
     notYet.style.fontWeight = 'bold';
@@ -477,8 +476,6 @@ function cal2(){
     }else if(subjectInfoArray[n].alreadyTaken || subjectInfoArray[n].futurePlan){
         groupB+=2;
     }
-
-
     if(groupB<6){
         console.log('グループBの単位不足');
         msg = 'グループBの単位不足';
@@ -486,9 +483,7 @@ function cal2(){
     for (let i = 0; i < sougouMessage.length; i++) {
         sougouMessage[i].textContent += msg;
     }
-
     let groupA = groupB;
-
     while(subjectInfoArray[n].subjectName != 'G3843'){
         n++;
     }
